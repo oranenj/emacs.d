@@ -3,10 +3,10 @@
 ;; Part of the Emacs Starter Kit
 
 (defvar starter-kit-packages (list 'idle-highlight
-                                   'ruby-mode
-                                   'inf-ruby
-                                   'js2-mode
-                                   'css-mode
+                             ;     'ruby-mode
+                             ;     'inf-ruby
+                             ;     'js2-mode
+                             ;     'css-mode
                                    ;; 'nxml
                                    'gist
                                    'paredit)
