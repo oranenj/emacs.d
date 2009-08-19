@@ -9,6 +9,13 @@
 ;; and brighter; it simply makes everything else vanish."
 ;; -Neal Stephenson, "In the Beginning was the Command Line"
 
+(setq *is-a-mac* (eq system-type 'darwin))
+(setq *is-cocoa-emacs* (and *is-a-mac* (eq window-system 'ns)))
+
+
+;; Configurables
+(setq *viper-enabled* nil) 
+
 ;; Load path etc.
 
 (setq dotfiles-dir (file-name-directory
@@ -58,6 +65,9 @@
 (require 'starter-kit-perl)
 ;(require 'starter-kit-ruby)
 ;(require 'starter-kit-js)
+
+(when *is-a-mac*
+  (require 'mac-init))
 
 (regen-autoloads)
 (load custom-file 'noerror)
