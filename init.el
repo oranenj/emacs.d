@@ -54,7 +54,7 @@
 (package-initialize)
 (require 'starter-kit-elpa)
 
-(when *viper-support*
+(when *viper-enabled*
   (require 'init-viper))
 
 
@@ -72,15 +72,16 @@
 
 
 ;; More stuff
+(when *is-a-mac*
+  (require 'init-mac))
 
 (require 'init-autocompletion)
 (require 'init-git) ;; needs egg
+(require 'init-org)
 
 
 
 
-(when *is-a-mac*
-  (require 'mac-init))
 
 (regen-autoloads)
 (load custom-file 'noerror)

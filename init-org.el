@@ -15,7 +15,7 @@
 (setq org-outline-path-complete-in-steps t)
 
 ;;; Agenda files!
-(setq 'org-agenda-files "~/org/")
+(setq org-agenda-files "~/org/")
 
 
 (setq org-todo-keywords

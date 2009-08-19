@@ -22,7 +22,7 @@
 ;; like "endomorph" - have to use an explicit "TAB" to complete.
 (define-key ac-complete-mode-map (kbd "\r") nil)
 
-(when *vi-emulation-support-enabled*
+(when *viper-enabled*
   (define-key ac-complete-mode-map (kbd "C-n") 'dabbrev-expand)
   (define-key ac-complete-mode-map (kbd "C-p") 'dabbrev-expand)
   (define-key ac-complete-mode-map viper-ESC-key 'viper-intercept-ESC-key))
