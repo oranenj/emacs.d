@@ -83,6 +83,12 @@
 (require 'init-org)
 (require 'init-clojure)
 
+(require 'color-theme)
+
+(color-theme-initialize)
+(color-theme-charcoal-black)
+
+
 (regen-autoloads)
 (update-directory-autoloads (concat dotfiles-dir "/site-lisp/clojure-mode/"))
 (load autoload-file)
