@@ -37,7 +37,7 @@
 (setq autoload-file (concat dotfiles-dir "loaddefs.el"))
 (setq package-user-dir (concat dotfiles-dir "elpa"))
 (setq custom-file (concat dotfiles-dir "custom.el"))
-(setq viper-custom-file (concat dotfiles-dir "viper.el"))
+
 
 (require 'cl)
 (require 'saveplace)
@@ -54,6 +54,10 @@
 (package-initialize)
 (require 'starter-kit-elpa)
 
+(when *viper-support*
+  (require 'init-viper))
+
+
 ;; Load up starter kit customizations
 
 (require 'starter-kit-defuns)
@@ -65,6 +69,15 @@
 (require 'starter-kit-perl)
 ;(require 'starter-kit-ruby)
 ;(require 'starter-kit-js)
+
+
+;; More stuff
+
+(require 'init-autocompletion)
+(require 'init-git) ;; needs egg
+
+
+
 
 (when *is-a-mac*
   (require 'mac-init))
