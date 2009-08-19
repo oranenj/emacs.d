@@ -16,7 +16,7 @@
 (set-keyboard-coding-system 'utf-8)
 (prefer-coding-system 'utf-8)
 
-(setq visible-bell t
+(setq visible-bell nil
       echo-keystrokes 0.1
       font-lock-maximum-decoration t
       inhibit-startup-message t
@@ -36,7 +36,7 @@
 
 ;; Set this to whatever browser you use
 ;; (setq browse-url-browser-function 'browse-url-firefox)
-;; (setq browse-url-browser-function 'browse-default-macosx-browser)
+(setq browse-url-browser-function 'browse-default-macosx-browser)
 ;; (setq browse-url-browser-function 'browse-default-windows-browser)
 ;; (setq browse-url-browser-function 'browse-default-kde)
 ;; (setq browse-url-browser-function 'browse-default-epiphany)
