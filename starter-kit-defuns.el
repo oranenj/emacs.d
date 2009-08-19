@@ -159,8 +159,7 @@ Symbols matching the text at point are put first in the completion list."
                     (directory-files autoload-dir t "\\.el$")))
       (message "Updating autoloads...")
       (let (emacs-lisp-mode-hook)
-        (update-directory-autoloads autoload-dir))))
-  (load autoload-file))
+        (update-directory-autoloads autoload-dir)))))
 
 (defun sudo-edit (&optional arg)
   (interactive "p")

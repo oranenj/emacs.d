@@ -2,13 +2,15 @@
 ;;
 ;; Part of the Emacs Starter Kit
 
+(require 'slime-autoloads)
+
 (define-key read-expression-map (kbd "TAB") 'lisp-complete-symbol)
 (define-key lisp-mode-shared-map (kbd "C-c l") "lambda")
 (define-key lisp-mode-shared-map (kbd "RET") 'reindent-then-newline-and-indent)
 (define-key lisp-mode-shared-map (kbd "C-\\") 'lisp-complete-symbol)
 (define-key lisp-mode-shared-map (kbd "C-c v") 'eval-buffer)
 
-(defface esk-paren-face
+(defface esk-paren-face 
    '((((class color) (background dark))
       (:foreground "grey50"))
      (((class color) (background light))

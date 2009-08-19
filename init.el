@@ -35,6 +35,8 @@
 (add-to-list 'load-path (concat dotfiles-dir "/elpa-to-submit/jabber"))
 
 (setq autoload-file (concat dotfiles-dir "loaddefs.el"))
+(setq generated-autoload-file autoload-file)
+
 (setq package-user-dir (concat dotfiles-dir "elpa"))
 (setq custom-file (concat dotfiles-dir "custom.el"))
 
@@ -79,12 +81,12 @@
 (require 'init-autocompletion)
 (require 'init-git) ;; needs egg
 (require 'init-org)
-
-
-
-
+(require 'init-clojure)
 
 (regen-autoloads)
+(update-directory-autoloads (concat dotfiles-dir "/site-lisp/clojure-mode/"))
+(load autoload-file)
+
 (load custom-file 'noerror)
 
 ;; Work around a bug on OS X where system-name is FQDN
