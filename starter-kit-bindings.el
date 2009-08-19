@@ -14,9 +14,6 @@
 ;; Perform general cleanup.
 (global-set-key (kbd "C-c n") 'cleanup-buffer)
 
-;; Turn on the menu bar for exploring new modes
-(global-set-key [f1] 'menu-bar-mode)
-
 ;; Font size
 (define-key global-map (kbd "C-+") 'text-scale-increase)
 (define-key global-map (kbd "C--") 'text-scale-decrease)

@@ -75,6 +75,7 @@
 (when *is-a-mac*
   (require 'init-mac))
 
+(require 'init-ido)
 (require 'init-autocompletion)
 (require 'init-git) ;; needs egg
 (require 'init-org)
