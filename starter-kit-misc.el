@@ -50,9 +50,6 @@
 ;; Enable syntax highlighting for older Emacsen that have it off
 (global-font-lock-mode t)
 
-;; You really don't need this; trust me.
-(menu-bar-mode -1)
-
 ;; Save a list of recent files visited.
 (recentf-mode 1)
 
