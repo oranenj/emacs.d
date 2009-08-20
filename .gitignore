@@ -1,3 +1,8 @@
+*~
+site-lisp/git/
+site-lisp/anything/
+site-lisp/auto-complete/
+site-lisp/color-theme/
 loaddefs.el*
 backups/*
 auto-save-list
