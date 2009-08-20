@@ -88,6 +88,9 @@
 (color-theme-initialize)
 (color-theme-charcoal-black)
 
+;; work around bug:
+(set-face-background 'region "DarkSlateBlue")
+
 
 (regen-autoloads)
 (update-directory-autoloads (concat dotfiles-dir "/site-lisp/clojure-mode/"))
