@@ -8,8 +8,9 @@
   (setenv "PATH" (concat dir ":" (getenv "PATH")))
   (setq exec-path (append (list dir) exec-path)))
 
-
-(setq mac-command-modifier 'meta)
+(setq mac-control-modifier 'meta)
+(setq mac-option-modifier  'none)
+(setq mac-command-modifier 'control)
 
 (when (and *viper-enabled* *is-cocoa-emacs*)
   (defun viper-change-cursor-color (new-color &optional frame)))
