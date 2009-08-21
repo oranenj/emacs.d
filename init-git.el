@@ -4,4 +4,8 @@
 (require 'git) 
 (require 'magit)
 
+(setq magit-save-some-buffers nil)
+
+(global-set-key [(meta f12)] 'magit-status)
+
 (provide 'init-git)
