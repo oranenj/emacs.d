@@ -8,6 +8,8 @@
   (setenv "PATH" (concat dir ":" (getenv "PATH")))
   (setq exec-path (append (list dir) exec-path)))
 
+(global-set-key (kbd "M-o") 'other-window)
+
 (setq mac-control-modifier 'meta)
 (setq mac-option-modifier  'none)
 (setq mac-command-modifier 'control)
