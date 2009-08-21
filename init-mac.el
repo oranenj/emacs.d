@@ -9,6 +9,7 @@
   (setq exec-path (append (list dir) exec-path)))
 
 (global-set-key (kbd "M-o") 'other-window)
+(global-set-key (kbd "C-2") 'set-mark-command)
 
 (setq mac-control-modifier 'meta)
 (setq mac-option-modifier  'none)
