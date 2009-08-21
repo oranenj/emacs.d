@@ -1,5 +1,7 @@
 #!/bin/sh -e
 
+# Note: snatched from http://github.com/purcell/emacs.d/
+
 function emacswiki_get {
   curl -o $1 "http://www.emacswiki.org/emacs/download/$1"
 }
