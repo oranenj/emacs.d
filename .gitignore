@@ -1,4 +1,5 @@
 *~
+*#
 site-lisp/git/
 site-lisp/anything/
 site-lisp/auto-complete/
@@ -23,3 +24,4 @@ image-dired/
 elim/
 elpa-to-submit/nxhtml/etc/schema/xhtml-loader.rnc~
 tramp
+/site-lisp/paredit/
