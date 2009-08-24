@@ -70,7 +70,7 @@
 (eval-after-load 'paredit
   '(define-key paredit-mode-map (kbd ";") 'self-insert-command))
 
-(dolist (x '(scheme emacs-lisp lisp clojure))
+(dolist (x '(scheme emacs-lisp lisp clojure slime-repl))
   (font-lock-add-keywords
    (intern (concat (symbol-name x) "-mode"))
    '(("(\\|)" . 'esk-paren-face)))
