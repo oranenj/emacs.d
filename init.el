@@ -82,6 +82,7 @@
 (require 'init-git) ;; needs egg
 (require 'init-org)
 (require 'init-clojure)
+(require 'init-anything)
 
 (require 'color-theme)
 
