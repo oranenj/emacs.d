@@ -12,7 +12,7 @@
 	url = git://github.com/technomancy/swank-clojure.git
 [submodule "site-lisp/slime"]
 	path = site-lisp/slime
-	url = git://github.com/technomancy/slime.git
+	url = git://common-lisp.net/projects/mirror/slime.git
 [submodule "site-lisp/magit"]
 	path = site-lisp/magit
 	url = git://gitorious.org/magit/mainline.git
