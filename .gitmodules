@@ -16,3 +16,6 @@
 [submodule "site-lisp/magit"]
 	path = site-lisp/magit
 	url = git://gitorious.org/magit/mainline.git
+[submodule "site-lisp/anything-config"]
+	path = site-lisp/anything-config
+	url = git://repo.or.cz/anything-config.git
