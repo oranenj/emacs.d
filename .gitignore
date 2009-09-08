@@ -25,3 +25,4 @@ elim/
 elpa-to-submit/nxhtml/etc/schema/xhtml-loader.rnc~
 tramp
 /site-lisp/paredit/
+/site-lisp/lacarte/lacarte.el
