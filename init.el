@@ -89,9 +89,9 @@
 (color-theme-initialize)
 (color-theme-charcoal-black)
 
-;; work around bug:
+;; For some reason my face customisations don't stick.
 (set-face-background 'region "DarkSlateBlue")
-
+(set-face-background 'cursor "#555588")
 
 (regen-autoloads)
 (update-directory-autoloads (concat dotfiles-dir "/site-lisp/clojure-mode/"))
