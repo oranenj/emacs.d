@@ -4,7 +4,7 @@
 (unless (boundp 'swank-clojure-extra-classpaths)
   (setq swank-clojure-extra-classpaths nil))
 (add-to-list 'swank-clojure-extra-classpaths
-             "/Users/oranenj/opt/lisp/clojure/clojure-contrib/src/")
+             "/Users/oranenj/opt/lisp/clojure-contrib/src/")
 (add-to-list 'swank-clojure-extra-classpaths
              "/Users/oranenj/opt/lisp/clojure/src/clj/")
 
