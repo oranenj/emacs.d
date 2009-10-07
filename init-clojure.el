@@ -1,12 +1,8 @@
 (require 'swank-clojure-autoload)
 
-(setq swank-clojure-jar-path "~/opt/lisp/clojure/clojure.jar")
-(unless (boundp 'swank-clojure-extra-classpaths)
-  (setq swank-clojure-extra-classpaths nil))
-(add-to-list 'swank-clojure-extra-classpaths
-             "/Users/oranenj/opt/lisp/clojure-contrib/src/")
-(add-to-list 'swank-clojure-extra-classpaths
-             "/Users/oranenj/opt/lisp/clojure/src/clj/")
+(setq swank-clojure-classpath (list "~/opt/lisp/clojure/clojure.jar"
+                                    "/Users/oranenj/opt/lisp/clojure-contrib/src/"
+                                    "/Users/oranenj/opt/lisp/clojure/src/clj/"))
 
 (eval-after-load 'clojure-mode
   '(progn
