@@ -1,4 +1,4 @@
-(require 'swank-clojure-autoload)
+(require 'swank-clojure)
 
 (setq swank-clojure-classpath (list "~/opt/lisp/clojure/clojure.jar"
                                     "/Users/oranenj/opt/lisp/clojure-contrib/src/"
