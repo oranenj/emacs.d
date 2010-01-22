@@ -12,7 +12,7 @@
 (global-set-key (kbd "C-2") 'set-mark-command)
 
 (setq mac-control-modifier 'meta)
-(setq mac-option-modifier  'none)
+(setq mac-option-modifier nil)
 (setq mac-command-modifier 'control)
 
 (when (and *viper-enabled* *is-cocoa-emacs*)
