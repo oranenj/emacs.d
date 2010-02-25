@@ -13,7 +13,9 @@
                       :init swank-clojure-init
                       :coding-system utf-8-unix)))
      (setq slime-net-coding-system 'utf-8-unix)
-     (slime-setup '(slime-repl))))
+     (slime-setup '(slime-repl))
+     (add-hook 'slime-repl-mode-hook 'swank-clojure-slime-repl-modify-syntax t)))
+  
 
 (provide 'init-clojure)
 
