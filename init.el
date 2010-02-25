@@ -18,8 +18,7 @@
 
 ;; Load path etc.
 
-(setq dotfiles-dir (file-name-directory
-                    (or (buffer-file-name) load-file-name)))
+(setq dotfiles-dir "/Users/oranenj/.emacs.d/")
 
 (add-to-list 'load-path dotfiles-dir)
 
@@ -86,6 +85,7 @@
 
 (require 'color-theme)
 
+(load (concat dotfiles-dir "site-lisp/auctex-install/auctex.el"))
 (color-theme-initialize)
 (color-theme-charcoal-black)
 
@@ -94,7 +94,7 @@
 (set-face-background 'cursor "#555588")
 
 (regen-autoloads)
-(update-directory-autoloads (concat dotfiles-dir "/site-lisp/clojure-mode/"))
+(update-directory-autoloads (concat dotfiles-dir "site-lisp/clojure-mode/"))
 (load autoload-file)
 
 (load custom-file 'noerror)
